@@ -1,27 +1,19 @@
 // HomePage.js
 import React from 'react';
 import logo from './logo.svg';
+import demo from './demo.png';
 
 const HomePage = () => {
   return (
     <div className='Home'>
         
-      <h1>Welcome to 75hard!</h1>
       <p>This is the home page content.</p>
 
       <header className="App-header">
-          <img src={logo} className="HomePage-logo" alt="logo" />
+          <img src={demo} className="HomePage-logo" alt="logo" />
           <p>
-            Edit <code>src/HomePage.js</code> and save to reload.
+            add testimonials
           </p>
-          <a
-            className="HomePage-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
     </div>
   );

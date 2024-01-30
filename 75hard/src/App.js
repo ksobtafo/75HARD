@@ -1,15 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './HomePage';
+import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
+
   return (
-    <div>
-    <HomePage/>
-       </div>
-    
+    <Router>
+      <div> 
+        <Header />
+        <main>
+          <HomePage/>
+          <nav>
+            {/* Use Link component for declarative navigation <Link to="/HomePage">Home Page</Link> */} 
+            
+          </nav>
+        </main>
+        <div style = {{ 
+            minHeight: "400px",
+            color: "green",
+        }}> 
+          
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
