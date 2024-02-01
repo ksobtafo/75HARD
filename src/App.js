@@ -4,25 +4,29 @@ import './App.css';
 import HomePage from './HomePage';
 import Header from './Header';
 import Footer from './Footer';
+import Dashboard from './Dashboard';
 
 const App = () => {
 
   return (
     <Router>
-      <div> 
+      <div>
         <Header />
         <main>
           <HomePage/>
           <nav>
             {/* Use Link component for declarative navigation <Link to="/HomePage">Home Page</Link> */} 
-            
+
           </nav>
         </main>
-        <div style = {{ 
+        <div style = {{
             minHeight: "400px",
             color: "green",
-        }}> 
-          
+        }}>
+          <Routes>
+            <Route exact path="/HomePage" component={HomePage} />
+            <Route path="/Dashboard" component={Dashboard} />
+          </Routes>
         </div>
         <Footer />
       </div>
