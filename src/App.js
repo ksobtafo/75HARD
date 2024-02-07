@@ -28,7 +28,7 @@ const App = () => {
             <Route path="/Dashboard" component={Dashboard} />
           </Routes>
         </div>
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );
